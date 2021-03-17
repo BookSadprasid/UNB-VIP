@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  color: #093619;
+}
+
+/* Left */
+.footer > p:first-of-type {
+  font-size: 24px;
+}
+
+/* Right */
+.footer > p:nth-child(2) {
+  font-size: 18px;
+}

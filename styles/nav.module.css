@@ -1,0 +1,15 @@
+.nav {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 100px;
+  background: #fbfbfb;
+}
+
+.nav_menu {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+}

@@ -1,15 +1,60 @@
+.main {
+  text-align: center;
+  padding: 50px 50px 0px;
+}
+
+.blockquote {
+  font-size: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #4b6f57;
+  line-height: 28px;
+  margin-bottom: 30px;
+  p {
+    margin: 0;
+    display: inline;
+  }
+  footer {
+    display: inline;
+  }
+}
+
+.p {
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 auto;
+}
+
+.splitSection {
+  margin-top: 50px;
+  display: flex;
+  gap: 150px;
+}
+
+.pictures {
+  img {
+  }
+}
+
+.news {
+  text-align: left;
+  h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  article {
+    margin-bottom: 24px;
+  }
+  article p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  padding: 5rem 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
