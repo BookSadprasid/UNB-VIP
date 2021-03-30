@@ -5,6 +5,12 @@
   --green: #093619;
 }
 
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html,
 body {
   padding: 0;
@@ -31,10 +37,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+address {
+  font-style: normal;
 }
 
 /* Button */

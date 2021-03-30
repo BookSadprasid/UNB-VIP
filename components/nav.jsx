@@ -34,7 +34,7 @@ export function Nav() {
           <a>Outreach</a>
         </Link>
 
-        <Link href="contacts">
+        <Link href="/contact">
           <a>Contacts</a>
         </Link>
       </div>
