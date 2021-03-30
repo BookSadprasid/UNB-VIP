@@ -9,14 +9,15 @@ const defaultLinks = [
   },
   {
     name: "Photo Gallery",
-    href: "#",
+    href: "/gallery",
   },
   {
     name: "People & Labs",
-    href: "#",
+    href: "/team",
   },
 ];
 
+// TODO: Add media queries to handle 4 column
 export function Header({ children, links = defaultLinks }) {
   return (
     <header className={styles.header}>
@@ -24,16 +25,18 @@ export function Header({ children, links = defaultLinks }) {
 
       <div className={styles.quickLinksBox}>
         {children}
-        {links.map(({ name, href }) => (
-          <Link href={href}>
-            <a>
-              <div className={styles.quickLinks}>
-                <img src="./volvox.png" alt="volvox" />
-                <div>{name}</div>
-              </div>
-            </a>
-          </Link>
-        ))}
+        <div>
+          {links.map(({ name, href }) => (
+            <Link href={href}>
+              <a>
+                <div className={styles.quickLinks}>
+                  <img src="./volvox.png" alt="volvox" />
+                  <div>{name}</div>
+                </div>
+              </a>
+            </Link>
+          ))}
+        </div>
       </div>
     </header>
   );
