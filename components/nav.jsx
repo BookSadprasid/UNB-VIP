@@ -18,15 +18,15 @@ export function Nav() {
           <a>Research</a>
         </Link>
 
-        <Link href="/Publications">
+        <Link href="/publications">
           <a>Publication</a>
         </Link>
 
-        <Link href="/Events">
+        <Link href="/events">
           <a>Events</a>
         </Link>
 
-        <Link href="/labs">
+        <Link href="/team">
           <a>People & Labs</a>
         </Link>
 
