@@ -4,6 +4,10 @@
   display: flex;
   gap: 100px;
   background: #fbfbfb;
+
+  > a {
+    min-width: 245px;
+  }
 }
 
 .nav_menu {

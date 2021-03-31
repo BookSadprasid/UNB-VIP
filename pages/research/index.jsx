@@ -1,7 +1,6 @@
 import Head from "next/head";
-import { Header, Footer } from "../components";
-import styles from "../styles/Home.module.scss";
-import whyStyles from "../styles/Why.module.scss";
+import { Header, Footer } from "../../components";
+import whyStyles from "../../styles/Why.module.scss";
 
 export default function Research() {
   return (
@@ -29,9 +28,8 @@ export default function Research() {
       >
         <h1>Research</h1>
       </Header>
-      <main className={styles.main}>
-        <blockquote className={styles.blockquote}>
-          {/* TODO: Automatically add quotes when using blockquote */}
+      <main>
+        <blockquote>
           <p>
             "In some colony like Volvox there once lay hidden the secret of the
             body and mind of man."

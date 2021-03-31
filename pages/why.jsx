@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { Header, Footer } from "../components";
-import styles from "../styles/Home.module.scss";
 import whyStyles from "../styles/Why.module.scss";
 
 export default function Why() {
@@ -12,21 +11,14 @@ export default function Why() {
 
       <Header
         links={[
-          {
-            name: "VOLVOCALES WIKIPEDIA",
-            href: "#",
-          },
-          {
-            name: "PHOTO GALLERY",
-            href: "#",
-          },
+          { name: "VOLVOCALES WIKIPEDIA", href: "#" },
+          { name: "PHOTO GALLERY", href: "#" },
         ]}
       >
         <h1>Why Volvocales</h1>
       </Header>
-      <main className={styles.main}>
-        <blockquote className={styles.blockquote}>
-          {/* TODO: Automatically add quotes when using blockquote */}
+      <main>
+        <blockquote>
           <p>
             "In some colony like Volvox there once lay hidden the secret of the
             body and mind of man."

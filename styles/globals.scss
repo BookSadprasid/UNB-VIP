@@ -1,5 +1,79 @@
-/* Font import */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+// https://tailwindcss.com/docs/adding-base-styles
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    font-family: "Lato", sans-serif;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  nav,
+  main {
+    @apply container;
+  }
+
+  main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  blockquote {
+    text-align: center;
+    font-size: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #4b6f57;
+    line-height: 28px;
+    margin-bottom: 30px;
+    p {
+      margin: 0;
+      display: inline;
+    }
+    footer {
+      display: inline;
+    }
+  }
+}
+
+@layer components {
+  .menu {
+    ul {
+      display: none;
+    }
+
+    &:hover,
+    a:hover,
+    ul:hover {
+      ul {
+        display: flex;
+      }
+    }
+  }
+
+  a.button {
+    background-color: var(--green);
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    width: max-content;
+  }
+}
 
 :root {
   --green: #093619;
@@ -9,8 +83,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
   line-height: 21.6px;
 }
 
@@ -31,20 +103,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+address {
+  font-style: normal;
 }
 
 /* Button */
-button,
-a.button {
-  background-color: var(--green);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  display: inline-block;
-}

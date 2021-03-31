@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/nav.module.css";
+import styles from "../styles/nav.module.scss";
 
 export function Nav() {
   return (
@@ -10,13 +10,57 @@ export function Nav() {
         </a>
       </Link>
       <div className={styles.nav_menu}>
-        <Link href="/about">
-          <a>About Volvocales</a>
-        </Link>
+        <div className="menu" style={{ minWidth: 150 }}>
+          <Link href="/about">
+            <a>About Volvocales</a>
+          </Link>
+          <ul
+            className="absolute list-arrow text-left flex flex-col gap-2 pt-1"
+            style={{ paddingLeft: 20 }}
+          >
+            <li>
+              <Link href="/why">
+                <a>Why Volvocales</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/wiki">
+                <a>Volvocales Wikipedia</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/gallery">
+                <a>Photo Gallery</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
 
-        <Link href="/research">
-          <a>Research</a>
-        </Link>
+        <div className="menu" style={{ minWidth: 150 }}>
+          <Link href="/research">
+            <a>Research</a>
+          </Link>
+          <ul
+            className="absolute list-arrow text-left flex flex-col gap-2 pt-1"
+            style={{ paddingLeft: 20 }}
+          >
+            <li>
+              <Link href="/research/theme">
+                <a>Research Theme</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <a>Research Resources</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <a>Research Tools</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
 
         <Link href="/publications">
           <a>Publication</a>
@@ -34,7 +78,7 @@ export function Nav() {
           <a>Outreach</a>
         </Link>
 
-        <Link href="contacts">
+        <Link href="/contact">
           <a>Contacts</a>
         </Link>
       </div>

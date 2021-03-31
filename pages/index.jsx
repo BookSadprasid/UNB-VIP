@@ -54,6 +54,9 @@ export default function Home() {
                 S.D. & Durand P.M. Transactions of the Royal Society of South
                 Africa; click here for an electronic reprint
               </p>
+              <a href="/news" className="button mt-1">
+                Read More
+              </a>
             </article>
           </div>
         </div>
