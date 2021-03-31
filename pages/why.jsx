@@ -12,14 +12,8 @@ export default function Why() {
 
       <Header
         links={[
-          {
-            name: "VOLVOCALES WIKIPEDIA",
-            href: "#",
-          },
-          {
-            name: "PHOTO GALLERY",
-            href: "#",
-          },
+          { name: "VOLVOCALES WIKIPEDIA", href: "#" },
+          { name: "PHOTO GALLERY", href: "#" },
         ]}
       >
         <h1>Why Volvocales</h1>

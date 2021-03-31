@@ -3,21 +3,11 @@ import styles from "../styles/header.module.scss";
 import { Nav } from "./nav";
 
 const defaultLinks = [
-  {
-    name: "Why Volvocales",
-    href: "/why",
-  },
-  {
-    name: "Photo Gallery",
-    href: "/gallery",
-  },
-  {
-    name: "People & Labs",
-    href: "/team",
-  },
+  { name: "Why Volvocales", href: "/why" },
+  { name: "Photo Gallery", href: "/gallery" },
+  { name: "People & Labs", href: "/team" },
 ];
 
-// TODO: Add media queries to handle 4 column
 export function Header({ children, links = defaultLinks }) {
   return (
     <header className={styles.header}>
