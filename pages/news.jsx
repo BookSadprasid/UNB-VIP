@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { Header, Footer, TaggedContent } from "../components";
 
-export default function Events() {
+export default function Publications() {
   return (
     <>
       <Head>
-        <title>Events | Volvocales Information Project</title>
+        <title>News | Volvocales Information Project</title>
       </Head>
 
       <Header
@@ -14,12 +14,12 @@ export default function Events() {
           { name: "Volvocales Wikipedia", href: "/wiki" },
         ]}
       >
-        <h1>Events</h1>
+        <h1>News</h1>
       </Header>
       <main>
         <TaggedContent
-          tagTitle="Filter by:"
-          contentTitle="Conference"
+          contentTitle="Articles"
+          tagTitle="Tags"
           contents={[
             {
               title:
@@ -27,7 +27,13 @@ export default function Events() {
               description:
                 "Sabeeha S Merchant, Simon E Prochnik, Olivier Vallon, Elizabeth H Harris, Steven J Karpowicz, George B Witman...",
               linkUrl: "#",
-              tags: ["Conference", "Workshops", "Archive"],
+              tags: [
+                "Asteromonadaceae",
+                "Characiochloridaceae",
+                "Characiosiphonaceae",
+                "Chlamydomonadaceae",
+                "Spondylomoraceae",
+              ],
             },
             {
               title:
@@ -35,7 +41,13 @@ export default function Events() {
               description:
                 "Sabeeha S Merchant, Simon E Prochnik, Olivier Vallon, Elizabeth H Harris, Steven J Karpowicz, George B Witman...",
               linkUrl: "#",
-              tags: ["Conference", "Workshops", "Archive"],
+              tags: [
+                "Asteromonadaceae",
+                "Characiochloridaceae",
+                "Characiosiphonaceae",
+                "Chlamydomonadaceae",
+                "Spondylomoraceae",
+              ],
             },
             {
               title:
@@ -43,7 +55,13 @@ export default function Events() {
               description:
                 "Sabeeha S Merchant, Simon E Prochnik, Olivier Vallon, Elizabeth H Harris, Steven J Karpowicz, George B Witman...",
               linkUrl: "#",
-              tags: ["Conference", "Workshops", "Archive"],
+              tags: [
+                "Asteromonadaceae",
+                "Characiochloridaceae",
+                "Characiosiphonaceae",
+                "Chlamydomonadaceae",
+                "Spondylomoraceae",
+              ],
             },
             {
               title:
@@ -51,7 +69,13 @@ export default function Events() {
               description:
                 "Sabeeha S Merchant, Simon E Prochnik, Olivier Vallon, Elizabeth H Harris, Steven J Karpowicz, George B Witman...",
               linkUrl: "#",
-              tags: ["Conference", "Workshops", "Archive"],
+              tags: [
+                "Asteromonadaceae",
+                "Characiochloridaceae",
+                "Characiosiphonaceae",
+                "Chlamydomonadaceae",
+                "Spondylomoraceae",
+              ],
             },
             {
               title:
@@ -59,7 +83,13 @@ export default function Events() {
               description:
                 "Sabeeha S Merchant, Simon E Prochnik, Olivier Vallon, Elizabeth H Harris, Steven J Karpowicz, George B Witman...",
               linkUrl: "#",
-              tags: ["Conference", "Workshops", "Archive"],
+              tags: [
+                "Asteromonadaceae",
+                "Characiochloridaceae",
+                "Characiosiphonaceae",
+                "Chlamydomonadaceae",
+                "Spondylomoraceae",
+              ],
             },
             {
               title:
@@ -67,7 +97,13 @@ export default function Events() {
               description:
                 "Sabeeha S Merchant, Simon E Prochnik, Olivier Vallon, Elizabeth H Harris, Steven J Karpowicz, George B Witman...",
               linkUrl: "#",
-              tags: ["Conference", "Workshops", "Archive"],
+              tags: [
+                "Asteromonadaceae",
+                "Characiochloridaceae",
+                "Characiosiphonaceae",
+                "Chlamydomonadaceae",
+                "Spondylomoraceae",
+              ],
             },
             {
               title:
@@ -75,15 +111,13 @@ export default function Events() {
               description:
                 "Sabeeha S Merchant, Simon E Prochnik, Olivier Vallon, Elizabeth H Harris, Steven J Karpowicz, George B Witman...",
               linkUrl: "#",
-              tags: ["Conference", "Workshops", "Archive"],
-            },
-            {
-              title:
-                "The Chlamydomonas genome reveals the evolution of key animal and plant functions",
-              description:
-                "Sabeeha S Merchant, Simon E Prochnik, Olivier Vallon, Elizabeth H Harris, Steven J Karpowicz, George B Witman...",
-              linkUrl: "#",
-              tags: ["Conference", "Workshops", "Archive"],
+              tags: [
+                "Asteromonadaceae",
+                "Characiochloridaceae",
+                "Characiosiphonaceae",
+                "Chlamydomonadaceae",
+                "Spondylomoraceae",
+              ],
             },
           ]}
         />

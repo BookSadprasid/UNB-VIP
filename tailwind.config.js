@@ -7,6 +7,7 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: "16px",
     },
     listStyleType: {
       none: "none",

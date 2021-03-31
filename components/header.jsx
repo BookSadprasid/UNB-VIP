@@ -13,14 +13,17 @@ export function Header({ children, links = defaultLinks }) {
     <header className={styles.header}>
       <Nav></Nav>
 
-      <div className={styles.quickLinksBox}>
-        {children}
-        <div>
+      <div
+        className="flex flex-grow items-center justify-between gap-2 container"
+        style={{ paddingTop: 120, paddingBottom: 40 }}
+      >
+        <div className="uppercase self-end">{children}</div>
+        <div className="flex gap-1">
           {links.map(({ name, href }) => (
-            <Link href={href}>
+            <Link href={href} key={name}>
               <a>
                 <div className={styles.quickLinks}>
-                  <img src="./volvox.png" alt="volvox" />
+                  <img src="/volvox.png" alt="volvox" />
                   <div>{name}</div>
                 </div>
               </a>

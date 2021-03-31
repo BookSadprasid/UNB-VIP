@@ -1,20 +1,31 @@
 import Head from "next/head";
-import { Header, Footer, Gallery } from "../components";
+import { ReactNode } from "react";
+import { Header, Footer, Gallery } from "../../components";
 
 export default function Team() {
   return (
     <>
       <Head>
-        <title>People & Labs | Volvocales Information Project</title>
+        <title>Research Theme | Volvocales Information Project</title>
       </Head>
 
       <Header
         links={[
-          { name: "About Volvocales", href: "/about" },
-          { name: "Volvocales Wikipedia", href: "/wiki" },
+          {
+            name: "Research Resources",
+            href: "/research/resources",
+          },
+          {
+            name: "Research Tools",
+            href: "/research/tools",
+          },
         ]}
       >
-        <h1>People & Labs</h1>
+        <h1>
+          Research
+          <br />
+          Themes
+        </h1>
       </Header>
       <main>
         <Gallery

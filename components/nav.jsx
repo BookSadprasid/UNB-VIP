@@ -37,8 +37,8 @@ export function Nav() {
         </div>
 
         <div className="menu" style={{ minWidth: 150 }}>
-          <Link href="/about">
-            <a>About Volvocales</a>
+          <Link href="/research">
+            <a>Research</a>
           </Link>
           <ul
             className="absolute list-arrow text-left flex flex-col gap-2 pt-1"
@@ -50,12 +50,12 @@ export function Nav() {
               </Link>
             </li>
             <li>
-              <Link href="/research/resources">
+              <Link href="#">
                 <a>Research Resources</a>
               </Link>
             </li>
             <li>
-              <Link href="/research/tools">
+              <Link href="#">
                 <a>Research Tools</a>
               </Link>
             </li>
