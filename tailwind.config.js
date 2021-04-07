@@ -17,6 +17,8 @@ module.exports = {
       0: 0,
       1: "8px",
       2: "16px",
+      3: "24px",
+      4: "32px",
     },
     extend: {
       colors: {

@@ -26,6 +26,8 @@ export const Contentful = {
     squashQueryResult(
       await client.getEntries({ content_type: "photoGallery" })
     ),
+  getPeopleLabs: async () =>
+    squashQueryResult(await client.getEntries({ content_type: "peopleLabs" })),
 };
 
 function squashQueryResult<T>(queryNode) {

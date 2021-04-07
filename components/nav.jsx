@@ -63,7 +63,7 @@ export function Nav() {
         </div>
 
         <Link href="/publications">
-          <a>Publication</a>
+          <a>Publications</a>
         </Link>
 
         <Link href="/events">
