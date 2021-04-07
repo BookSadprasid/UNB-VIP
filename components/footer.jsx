@@ -6,6 +6,6 @@ export const Footer = () => (
       Volvocales <br />
       Information Project
     </p>
-    <p>Managed and maintain by UNB VIP</p>
+    <p>Managed and maintained by UNB VIP</p>
   </footer>
 );
