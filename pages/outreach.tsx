@@ -34,7 +34,8 @@ export default function Outreach({ outreach }) {
       </Header>
       <main>
         <TaggedContent
-          contentTitle="Species Name"
+          contentTitle=" "
+          tagTitle="Genus"
           contents={outreach.map(({ tags, ...other }) => ({
             ...other,
             tags: tags.map(({ name }) => name),
