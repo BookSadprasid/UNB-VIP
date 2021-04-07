@@ -22,6 +22,10 @@ export const Contentful = {
     squashQueryResult(await client.getEntries({ content_type: "event" })),
   getOutreachPage: async () =>
     squashQueryResult(await client.getEntries({ content_type: "outreach" })),
+  getPhotoGalleryPage: async () =>
+    squashQueryResult(
+      await client.getEntries({ content_type: "photoGallery" })
+    ),
 };
 
 function squashQueryResult<T>(queryNode) {

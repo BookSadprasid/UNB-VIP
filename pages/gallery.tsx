@@ -1,7 +1,17 @@
 import Head from "next/head";
-import { Header, Footer, TaggedContent } from "../components";
+import { Header, Footer, TaggedContent } from "@components";
+import { Contentful } from "@lib";
 
-export default function Gallery() {
+export async function getServerSideProps() {
+  const photos = await Contentful.getPhotoGalleryPage();
+  return {
+    props: {
+      photos,
+    },
+  };
+}
+
+export default function Gallery({ photos }) {
   return (
     <>
       <Head>
@@ -23,50 +33,11 @@ export default function Gallery() {
       <main>
         <TaggedContent
           contentTitle="Species"
-          contents={[
-            {
-              pictureUrl: "/volvox.png",
-              description:
-                "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              link: "#",
-              tags: ["Asteromonadaceae", "Characiochloridaceae"],
-            },
-            {
-              pictureUrl: "/volvox.png",
-              description:
-                "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              link: "#",
-              tags: ["Asteromonadaceae", "Characiochloridaceae"],
-            },
-            {
-              pictureUrl: "/volvox.png",
-              description:
-                "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              link: "#",
-              tags: ["Asteromonadaceae", "Characiochloridaceae"],
-            },
-            {
-              pictureUrl: "/volvox.png",
-              description:
-                "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              link: "#",
-              tags: ["Asteromonadaceae", "Characiochloridaceae"],
-            },
-            {
-              pictureUrl: "/volvox.png",
-              description:
-                "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              link: "#",
-              tags: ["Asteromonadaceae", "Characiochloridaceae"],
-            },
-            {
-              pictureUrl: "/volvox.png",
-              description:
-                "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              link: "#",
-              tags: ["Asteromonadaceae", "Characiochloridaceae"],
-            },
-          ]}
+          contents={photos.map(({ tags, picture, ...other }) => ({
+            ...other,
+            pictureUrl: picture?.[0].src ?? undefined,
+            tags: tags.map(({ name }) => name),
+          }))}
         />
       </main>
       <Footer />
