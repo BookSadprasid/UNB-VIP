@@ -21,7 +21,6 @@ export default function Research({ title, quote, quoteAuthor, content }) {
             name: "Research Themes",
             href: "/research/theme",
           },
-          // TODO: This does not go anywhere
           {
             name: "Research Resources",
             href: "/research/resources",

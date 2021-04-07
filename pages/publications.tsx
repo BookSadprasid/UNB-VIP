@@ -28,7 +28,8 @@ export default function Publications({ publications }) {
       </Header>
       <main>
         <TaggedContent
-          contentTitle="Species Name"
+          contentTitle=""
+          tagTitle="Genus"
           contents={publications.map(({ tags, ...other }) => ({
             ...other,
             tags: tags.map(({ name }) => name),

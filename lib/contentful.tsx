@@ -28,6 +28,14 @@ export const Contentful = {
     ),
   getPeopleLabs: async () =>
     squashQueryResult(await client.getEntries({ content_type: "peopleLabs" })),
+  getResearchTheme: async () =>
+    squashQueryResult(
+      await client.getEntries({ content_type: "researchTheme" })
+    ),
+  getResearchResources: async () =>
+    squashQueryResult(
+      await client.getEntries({ content_type: "researchResource" })
+    ),
 };
 
 function squashQueryResult<T>(queryNode) {
