@@ -30,7 +30,7 @@ export function TaggedContent({
   return (
     <div
       className="grid text-left"
-      style={{ gridTemplateColumns: "max-content 1fr", gap: 50 }}
+      style={{ gridTemplateColumns: "minmax(200px, max-content) 1fr", gap: 50 }}
     >
       {/* Tags */}
       <aside>

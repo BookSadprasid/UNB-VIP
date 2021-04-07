@@ -18,6 +18,10 @@ export const Contentful = {
     squashQueryResult(
       await client.getEntries({ content_type: "publications" })
     ),
+  getEventPage: async () =>
+    squashQueryResult(await client.getEntries({ content_type: "event" })),
+  getOutreachPage: async () =>
+    squashQueryResult(await client.getEntries({ content_type: "outreach" })),
 };
 
 function squashQueryResult<T>(queryNode) {
