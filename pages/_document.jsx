@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className="min-h-screen h-0">
           <Main />
           <NextScript />
         </body>

@@ -18,7 +18,11 @@ module.exports = {
       1: "8px",
       2: "16px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        green: "#4b6f57",
+      },
+    },
   },
   variants: {
     extend: {},
