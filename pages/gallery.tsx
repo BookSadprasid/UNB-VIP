@@ -28,42 +28,42 @@ export default function Gallery() {
               pictureUrl: "/volvox.png",
               description:
                 "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              linkUrl: "#",
+              link: "#",
               tags: ["Asteromonadaceae", "Characiochloridaceae"],
             },
             {
               pictureUrl: "/volvox.png",
               description:
                 "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              linkUrl: "#",
+              link: "#",
               tags: ["Asteromonadaceae", "Characiochloridaceae"],
             },
             {
               pictureUrl: "/volvox.png",
               description:
                 "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              linkUrl: "#",
+              link: "#",
               tags: ["Asteromonadaceae", "Characiochloridaceae"],
             },
             {
               pictureUrl: "/volvox.png",
               description:
                 "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              linkUrl: "#",
+              link: "#",
               tags: ["Asteromonadaceae", "Characiochloridaceae"],
             },
             {
               pictureUrl: "/volvox.png",
               description:
                 "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              linkUrl: "#",
+              link: "#",
               tags: ["Asteromonadaceae", "Characiochloridaceae"],
             },
             {
               pictureUrl: "/volvox.png",
               description:
                 "The Fifth International Volvox Conference will be held at the University of Tokyo Hongo campus, Japan, July 26-29, 2019!!!!",
-              linkUrl: "#",
+              link: "#",
               tags: ["Asteromonadaceae", "Characiochloridaceae"],
             },
           ]}
