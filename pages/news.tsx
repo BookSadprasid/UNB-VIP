@@ -27,7 +27,7 @@ export default function News({ news }) {
       <main>
         <TaggedContent
           contentTitle="Articles"
-          tagTitle="Filter:"
+          tagTitle="Filter by:"
           contents={news.map(({ tags, ...other }) => ({
             ...other,
             tags: tags.map(({ name }) => name),

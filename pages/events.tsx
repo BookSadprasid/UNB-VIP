@@ -29,7 +29,6 @@ export default function Events({ events }) {
       <main>
         <TaggedContent
           tagTitle="Filter by:"
-          contentTitle="Conference"
           contents={events.map(({ tags, ...other }) => ({
             ...other,
             tags: tags.map(({ name }) => name),

@@ -56,15 +56,17 @@ export function TaggedContent({
 
       {/* Contents */}
       <section>
-        <h2
-          className="mb-2"
-          style={{
-            color: "var(--green)",
-            fontSize: 36,
-          }}
-        >
-          {contentTitle || "Species Name"}
-        </h2>
+        {contentTitle && (
+          <h2
+            className="mb-2"
+            style={{
+              color: "var(--green)",
+              fontSize: 36,
+            }}
+          >
+            {contentTitle}
+          </h2>
+        )}
         <div className="grid grid-cols-2" style={{ gap: 50 }}>
           {contents
             .filter(({ tags }) => (filter ? tags.includes(filter) : true))
