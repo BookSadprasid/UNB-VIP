@@ -23,6 +23,9 @@ export function TaggedContent({
   const [filter, setFilter] = useState<string | null>(null);
   const tags = [...new Set(contents.flatMap((content) => content.tags))];
 
+  // Bail if no contents
+  if (!contents.length) return null;
+
   function toggleFilter(name: string) {
     setFilter((prevFilter) => (prevFilter === name ? null : name));
   }
