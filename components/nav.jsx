@@ -46,16 +46,16 @@ export function Nav() {
           >
             <li>
               <Link href="/research/theme">
-                <a>Research Theme</a>
+                <a>Research Themes</a>
               </Link>
             </li>
             <li>
-              <Link href="#">
+              <Link href="/research/resources">
                 <a>Research Resources</a>
               </Link>
             </li>
             <li>
-              <Link href="#">
+              <Link href="/research/tools">
                 <a>Research Tools</a>
               </Link>
             </li>
@@ -63,7 +63,7 @@ export function Nav() {
         </div>
 
         <Link href="/publications">
-          <a>Publication</a>
+          <a>Publications</a>
         </Link>
 
         <Link href="/events">

@@ -3,19 +3,17 @@ import { Header, Footer, TaggedContent } from "@components";
 import { Contentful } from "@lib";
 
 export async function getServerSideProps() {
-  const photos = await Contentful.getPhotoGalleryPage();
+  const news = await Contentful.getNewsPage();
   return {
-    props: {
-      photos,
-    },
+    props: { news },
   };
 }
 
-export default function Gallery({ photos }) {
+export default function News({ news }) {
   return (
     <>
       <Head>
-        <title>Photo Gallery | Volvocales Information Project</title>
+        <title>News | Volvocales Information Project</title>
       </Head>
 
       <Header
@@ -24,18 +22,14 @@ export default function Gallery({ photos }) {
           { name: "Volvocales Wikipedia", href: "/wiki" },
         ]}
       >
-        <h1>
-          Photo
-          <br />
-          Gallery
-        </h1>
+        <h1>News</h1>
       </Header>
       <main>
         <TaggedContent
-          contentTitle="Species"
-          contents={photos.map(({ tags, picture, ...other }) => ({
+          contentTitle="Articles"
+          tagTitle="Filter by:"
+          contents={news.map(({ tags, ...other }) => ({
             ...other,
-            pictureUrl: picture?.[0].src ?? undefined,
             tags: tags.map(({ name }) => name),
           }))}
         />

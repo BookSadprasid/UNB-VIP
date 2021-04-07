@@ -17,8 +17,8 @@ export function Header({ children, links = defaultLinks }) {
         className="flex flex-grow items-center justify-between gap-2 container"
         style={{ paddingTop: 120, paddingBottom: 40 }}
       >
-        <div className="uppercase self-end">{children}</div>
-        <div className="flex gap-1">
+        {children && <div className="uppercase self-end">{children}</div>}
+        <div className="flex gap-1 w-full justify-center">
           {links.map(({ name, href }) => (
             <Link href={href} key={name}>
               <a>

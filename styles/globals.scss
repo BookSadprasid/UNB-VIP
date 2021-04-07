@@ -15,6 +15,10 @@
 
   body {
     font-size: 18px;
+
+    > div {
+      @apply h-full flex flex-col;
+    }
   }
 
   nav,
@@ -23,8 +27,20 @@
   }
 
   main {
+    @apply flex-grow;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  ul,
+  ol {
+    list-style: revert;
+    margin: revert;
+    padding: revert;
+  }
+
+  button {
+    outline: none !important;
   }
 
   h3 {
@@ -53,6 +69,7 @@
   .menu {
     ul {
       display: none;
+      margin: 0;
     }
 
     &:hover,
@@ -72,6 +89,16 @@
     color: #fff;
     display: inline-block;
     width: max-content;
+  }
+}
+
+@layer utilities {
+  .max-w-content {
+    margin: 32px auto;
+    max-width: 850px;
+    p {
+      margin: 32px 0;
+    }
   }
 }
 

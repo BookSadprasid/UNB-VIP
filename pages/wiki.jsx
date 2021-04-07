@@ -29,7 +29,7 @@ export default function Wiki() {
           availability, publications). Other sections are indicated in the Side
           Bar.
         </p>
-        <Link href="#">
+        <Link href="/wiki">
           <a className="button mt-2 mb-2">Go to Volvocales Wikipedia</a>
         </Link>
         <h3 className="mt-2">How to contribute:</h3>

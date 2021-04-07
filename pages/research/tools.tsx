@@ -3,7 +3,7 @@ import { Header, Footer, Gallery } from "@components";
 import { Contentful } from "@lib";
 
 export async function getServerSideProps() {
-  const entries = await Contentful.getResearchTheme();
+  const entries = await Contentful.getResearchTools();
   return {
     props: {
       entries,
@@ -11,23 +11,23 @@ export async function getServerSideProps() {
   };
 }
 
-export default function Theme({ entries }) {
+export default function Tools({ entries }) {
   return (
     <>
       <Head>
-        <title>Research Themes | Volvocales Information Project</title>
+        <title>Research Tools | Volvocales Information Project</title>
       </Head>
 
       <Header
         links={[
+          { name: "Research Themes", href: "/research/theme" },
           { name: "Research Resources", href: "/research/resources" },
-          { name: "Research Tools", href: "/research/tools" },
         ]}
       >
         <h1>
           Research
           <br />
-          Themes
+          Tools
         </h1>
       </Header>
       <main>

@@ -1,8 +1,15 @@
 import Head from "next/head";
-import { Header, Footer } from "../components";
+import { Header, Footer, Quote } from "@components";
 import styles from "../styles/Home.module.scss";
+import { Contentful } from "@lib";
+import { renderRichText } from "@utils";
 
-export default function Home() {
+export async function getServerSideProps() {
+  const props = await Contentful.getHomePage();
+  return { props };
+}
+
+export default function Home({ quote, quoteAuthor, content }) {
   return (
     <>
       <Head>
@@ -10,23 +17,10 @@ export default function Home() {
       </Head>
       <Header />
       <main className={styles.main}>
-        <blockquote className={styles.blockquote}>
-          {/* TODO: Automatically add quotes when using blockquote */}
-          <p>
-            "Few groups of organisms hold such a fascination for evolutionary
-            biologists as the Volvocales. It is almost as if these algae were
-            designed to exemplify the process of evolution."
-          </p>
-          <footer>- (Bell 1985)</footer>
-        </blockquote>
-        <p className={styles.p}>
-          This project is designed as a common effort among scientists with
-          interests in Volvocales who wish to share information, data, images,
-          publications. The site provides information about new publications,
-          research themes/projects, labs, databases, and other research tools of
-          interest to the Volvocales community.{" "}
-        </p>
+        <Quote quote={quote} quoteAuthor={quoteAuthor} />
+        <div className={styles.richContent}>{renderRichText(content)}</div>
         <div className={styles.splitSection}>
+          {/* TODO: Missing Contentful */}
           <div className={styles.pictures}>
             <img src="/volvox-small.png" alt="volvox" />
             <p>
