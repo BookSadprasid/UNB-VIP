@@ -32,7 +32,7 @@ export default function Gallery({ photos }) {
       </Header>
       <main>
         <TaggedContent
-          contentTitle=""
+          tagTitle="Genus"
           contents={photos.map(({ tags, picture, ...other }) => ({
             ...other,
             pictureUrl: picture?.[0].src ?? undefined,
