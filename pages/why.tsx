@@ -17,8 +17,8 @@ export default function Why({ title, quote, quoteAuthor, content }) {
 
       <Header
         links={[
-          { name: "VOLVOCALES WIKIPEDIA", href: "#" },
-          { name: "PHOTO GALLERY", href: "#" },
+          { name: "VOLVOCALES WIKIPEDIA", href: "/wiki" },
+          { name: "PHOTO GALLERY", href: "/gallery" },
         ]}
       >
         <h1>{title}</h1>

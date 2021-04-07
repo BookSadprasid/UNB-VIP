@@ -38,6 +38,10 @@ export const Contentful = {
     squashQueryResult(
       await client.getEntries({ content_type: "researchResource" })
     ),
+  getResearchTools: async () =>
+    squashQueryResult(
+      await client.getEntries({ content_type: "researchTool" })
+    ),
 };
 
 function squashQueryResult<T>(queryNode) {
