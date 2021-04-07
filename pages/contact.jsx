@@ -43,7 +43,7 @@ export default function Contact() {
           contributed to. You can also register to receive e-mails when new
           information is added to the wiki.
         </p>
-        <Link href="#">
+        <Link href="mailto:anedelcu@unb.ca">
           <a className="button mt-2">Contribute</a>
         </Link>
       </main>
